@@ -1,0 +1,26 @@
+#todolist maker
+import time
+import sys
+
+def menu():
+    while True:
+        c = input("""
+        1: Write todo list
+        2: Quit
+        """)
+        if c == "1":
+            writer()
+        elif c == "2":
+            sys.exit()
+        else:
+            print("Please enter 1 or 2.")
+def writer():
+    w = input("Write what you want on your ToDoList: ")
+    writing(w)
+def writing(w):
+    with open("TodoList.txt", "a") as f:
+        f.write(w + "\n")
+        time.sleep(0.3)
+    print("Written, it should be in the folder your IDE saves to, or where this file is saved.")
+
+menu()
