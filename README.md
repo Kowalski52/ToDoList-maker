@@ -1,2 +1,2 @@
 # ToDoList-maker
-Really Really simple To Do list maker ijn python
+Really Really simple To Do list maker in python
